@@ -1,0 +1,27 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "Commit all files currently open", 
+  "language": "JavaScript", 
+  "trigger_enabled": false, 
+  "value": [
+    "", 
+    "", 
+    "var filePaths = [];", 
+    "var fileNames = [];", 
+    "var editorViews = ko.views.manager.getAllViews()", 
+    "for (let editorView of editorViews)", 
+    "{", 
+    "    filePaths.push(editorView.koDoc.file.path);", 
+    "    fileNames.push(new String(editorView.koDoc.file.path).replace(/(.*?)[\\\\\\/]([^\\\\\\/]+)$/,'$2'));", 
+    "}", 
+    "var message = prompt('Message:', 'Commit all files currently open');", 
+    "var cmd = '\"c:\\\\Program Files\\\\TortoiseSVN\\\\bin\\\\svn.exe\" commit -m \"'+ message +'\" \"'+filePaths.join('\" \"')+'\"';", 
+    "var t = ko.run.runEncodedCommand(window, cmd);"
+  ], 
+  "trigger": "trigger_postopen", 
+  "rank": 100, 
+  "version": "1.0.12", 
+  "async": false, 
+  "type": "macro", 
+  "icon": "chrome://icomoon/skin/icons/file-upload.png"
+}

@@ -1,0 +1,17 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "Show diff with previous version", 
+  "language": "JavaScript", 
+  "trigger": "trigger_postopen", 
+  "trigger_enabled": false, 
+  "value": [
+    "var currentfile = ko.views.manager.currentView.koDoc.displayPath", 
+    "var cmd = '\"c:\\\\Program Files\\\\TortoiseSVN\\\\bin\\\\svn.exe\" di \"'+currentfile+'\"';", 
+    "ko.run.runEncodedCommand(window, cmd);"
+  ], 
+  "version": "1.0.12", 
+  "rank": 100, 
+  "async": false, 
+  "type": "macro", 
+  "icon": "chrome://icomoon/skin/icons/copy4.png"
+}

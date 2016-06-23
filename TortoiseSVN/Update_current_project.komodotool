@@ -1,0 +1,17 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "Update current project", 
+  "language": "JavaScript", 
+  "trigger_enabled": false, 
+  "value": [
+    "var projectDirectory = ko.projects.manager.currentProject.liveDirectory;", 
+    "var cmd = '\"c:\\\\Program Files\\\\TortoiseSVN\\\\bin\\\\svn.exe\" update \"'+projectDirectory+'\"';", 
+    "ko.run.runEncodedCommand(window, cmd);"
+  ], 
+  "version": "1.0.12", 
+  "rank": 100, 
+  "async": false, 
+  "icon": "chrome://icomoon/skin/icons/ko_scc_update.png", 
+  "type": "macro", 
+  "trigger": "trigger_postopen"
+}
