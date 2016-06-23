@@ -4,8 +4,15 @@
   "language": "JavaScript", 
   "trigger_enabled": false, 
   "value": [
+    "", 
+    "// TortoiseSVN Path WITH a trailing slash", 
+    "// Remember to escape the backslash (`\\\\` instead of `\\`).", 
+    "var TortoisePath = \"c:\\\\Program Files\\\\TortoiseSVN\\\\\";", 
+    "", 
+    "/********/", 
+    "", 
     "var projectDirectory = ko.projects.manager.currentProject.liveDirectory;", 
-    "var cmd = '\"c:\\\\Program Files\\\\TortoiseSVN\\\\bin\\\\svn.exe\" cleanup \"'+projectDirectory+'\"';", 
+    "var cmd = '\"'+TortoisePath+'bin\\\\svn.exe\" cleanup \"'+projectDirectory+'\"';", 
     "ko.run.runEncodedCommand(window, cmd);"
   ], 
   "version": "1.0.12", 

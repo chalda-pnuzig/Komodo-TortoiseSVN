@@ -1,10 +1,15 @@
 {
-  "keyboard_shortcut": "", 
+  "keyboard_shortcut": "Ctrl+Shift+D", 
   "name": "Commit all files currently open", 
   "language": "JavaScript", 
   "trigger_enabled": false, 
   "value": [
     "", 
+    "// TortoiseSVN Path WITH a trailing slash", 
+    "// Remember to escape the backslash (`\\\\` instead of `\\`).", 
+    "var TortoisePath = \"c:\\\\Program Files\\\\TortoiseSVN\\\\\";", 
+    "", 
+    "/********/", 
     "", 
     "var filePaths = [];", 
     "var fileNames = [];", 
@@ -15,7 +20,7 @@
     "    fileNames.push(new String(editorView.koDoc.file.path).replace(/(.*?)[\\\\\\/]([^\\\\\\/]+)$/,'$2'));", 
     "}", 
     "var message = prompt('Message:', 'Commit all files currently open');", 
-    "var cmd = '\"c:\\\\Program Files\\\\TortoiseSVN\\\\bin\\\\svn.exe\" commit -m \"'+ message +'\" \"'+filePaths.join('\" \"')+'\"';", 
+    "var cmd = '\"'+TortoisePath+'bin\\\\svn.exe\" commit -m \"'+ message +'\" \"'+filePaths.join('\" \"')+'\"';", 
     "var t = ko.run.runEncodedCommand(window, cmd);"
   ], 
   "trigger": "trigger_postopen", 
@@ -23,5 +28,5 @@
   "version": "1.0.12", 
   "async": false, 
   "type": "macro", 
-  "icon": "chrome://icomoon/skin/icons/file-upload.png"
+  "icon": "koicon://ko-svg/chrome/icomoon/skin/file-upload.svg"
 }
