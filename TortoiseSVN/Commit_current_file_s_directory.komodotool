@@ -1,5 +1,5 @@
 {
-  "keyboard_shortcut": "Ctrl+Shift+Q", 
+  "keyboard_shortcut": "", 
   "name": "Commit current file's directory", 
   "language": "JavaScript", 
   "trigger_enabled": false, 
