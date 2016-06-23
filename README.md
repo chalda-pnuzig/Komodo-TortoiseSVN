@@ -3,7 +3,7 @@ TortoiseSVN snippets collection for Komodo edit / ide.
 
 ## Usage
 
-The default path of TortoiseSVN is set to `C:\Program Files\TortoiseSVN\`
+The default path of TortoiseSVN is set to `C:\Program Files\TortoiseSVN\`.
 If you have TortoiseSVN in another directory, right click on snippet and change it with correct path **WITH** a trailing slash.
 You also need to remember to escape the backslash (`\\` instead of `\`).
 
