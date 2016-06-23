@@ -1,5 +1,5 @@
 {
-  "keyboard_shortcut": "Ctrl+Shift+A", 
+  "keyboard_shortcut": "", 
   "name": "Commit current file", 
   "language": "JavaScript", 
   "trigger_enabled": false, 
