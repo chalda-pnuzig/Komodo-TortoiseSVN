@@ -4,14 +4,20 @@
   "language": "JavaScript", 
   "trigger_enabled": false, 
   "value": [
+    "", 
+    "// TortoiseSVN Path WITH a trailing slash", 
+    "var TortoisePath = \"c:\\\\Program Files\\\\TortoiseSVN\\\\\";", 
+    "", 
+    "/********/", 
+    "", 
     "var projectDirectory = ko.projects.manager.currentProject.liveDirectory;", 
-    "var cmd = '\"c:\\\\Program Files\\\\TortoiseSVN\\\\bin\\\\svn.exe\" update \"'+projectDirectory+'\"';", 
+    "var cmd = '\"'+TortoisePath+'bin\\\\svn.exe\" update \"'+projectDirectory+'\"';", 
     "ko.run.runEncodedCommand(window, cmd);"
   ], 
-  "version": "1.0.12", 
+  "trigger": "trigger_postopen", 
   "rank": 100, 
+  "version": "1.0.12", 
   "async": false, 
-  "icon": "chrome://icomoon/skin/icons/ko_scc_update.png", 
   "type": "macro", 
-  "trigger": "trigger_postopen"
+  "icon": "koicon://ko-svg/chrome/icomoon/skin/ko_scc_update.svg"
 }

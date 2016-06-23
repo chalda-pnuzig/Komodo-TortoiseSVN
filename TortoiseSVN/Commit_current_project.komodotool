@@ -1,18 +1,24 @@
 {
-  "keyboard_shortcut": "", 
+  "keyboard_shortcut": "Ctrl+Alt+Shift+A", 
   "name": "Commit current project", 
   "language": "JavaScript", 
   "trigger_enabled": false, 
   "value": [
+    "", 
+    "// TortoiseSVN Path WITH a trailing slash", 
+    "// Remember to escape the backslash (`\\\\` instead of `\\`).", 
+    "var TortoisePath = \"c:\\\\Program Files\\\\TortoiseSVN\\\\\";", 
+    "", 
+    "/********/", 
+    "", 
     "var projectDirectory = ko.projects.manager.currentProject.liveDirectory;", 
-    "var cmd = '\"c:\\\\Program Files\\\\TortoiseSVN\\\\bin\\\\TortoiseProc.exe\" /command:commit /path:\"'+projectDirectory+'\"';", 
-    "ko.run.runEncodedCommand(window, cmd);", 
-    ""
+    "var cmd = '\"'+TortoisePath+'bin\\\\TortoiseProc.exe\" /command:commit /path:\"'+projectDirectory+'\"';", 
+    "ko.run.runEncodedCommand(window, cmd);"
   ], 
   "trigger": "trigger_postopen", 
   "rank": 100, 
   "version": "1.0.12", 
   "async": false, 
   "type": "macro", 
-  "icon": "chrome://icomoon/skin/icons/upload7.png"
+  "icon": "koicon://ko-svg/chrome/icomoon/skin/upload7.svg"
 }

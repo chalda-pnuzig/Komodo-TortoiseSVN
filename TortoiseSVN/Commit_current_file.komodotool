@@ -1,0 +1,24 @@
+{
+  "keyboard_shortcut": "Ctrl+Shift+A", 
+  "name": "Commit current file", 
+  "language": "JavaScript", 
+  "trigger_enabled": false, 
+  "value": [
+    "// TortoiseSVN Path WITH a trailing slash", 
+    "// Remember to escape the backslash (`\\\\` instead of `\\`).", 
+    "var TortoisePath = \"c:\\\\Program Files\\\\TortoiseSVN\\\\\";", 
+    "", 
+    "/********/", 
+    "", 
+    "var currentfile = ko.views.manager.currentView.koDoc.displayPath;", 
+    "var message = prompt('Message:', 'Commit file '+ko.views.manager.currentView.koDoc.baseName);", 
+    "var cmd = '\"'+TortoisePath+'bin\\\\svn.exe\" commit -m \"'+ message +'\" \"'+currentfile+'\"';", 
+    "var t = ko.run.runEncodedCommand(window, cmd);"
+  ], 
+  "trigger": "trigger_postopen", 
+  "rank": 100, 
+  "version": "1.0.12", 
+  "async": false, 
+  "type": "macro", 
+  "icon": "koicon://ko-svg/chrome/icomoon/skin/file-upload.svg"
+}

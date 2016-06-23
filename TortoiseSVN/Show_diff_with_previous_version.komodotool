@@ -2,16 +2,23 @@
   "keyboard_shortcut": "", 
   "name": "Show diff with previous version", 
   "language": "JavaScript", 
-  "trigger": "trigger_postopen", 
   "trigger_enabled": false, 
   "value": [
+    "", 
+    "// TortoiseSVN Path WITH a trailing slash", 
+    "// Remember to escape the backslash (`\\\\` instead of `\\`).", 
+    "var TortoisePath = \"c:\\\\Program Files\\\\TortoiseSVN\\\\\";", 
+    "", 
+    "/********/", 
+    "", 
     "var currentfile = ko.views.manager.currentView.koDoc.displayPath", 
-    "var cmd = '\"c:\\\\Program Files\\\\TortoiseSVN\\\\bin\\\\svn.exe\" di \"'+currentfile+'\"';", 
+    "var cmd = '\"'+TortoisePath+'bin\\\\svn.exe\" di \"'+currentfile+'\"';", 
     "ko.run.runEncodedCommand(window, cmd);"
   ], 
-  "version": "1.0.12", 
+  "trigger": "trigger_postopen", 
   "rank": 100, 
+  "version": "1.0.12", 
   "async": false, 
   "type": "macro", 
-  "icon": "chrome://icomoon/skin/icons/copy4.png"
+  "icon": "koicon://ko-svg/chrome/icomoon/skin/copy4.svg"
 }
