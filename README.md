@@ -1,6 +1,5 @@
 # Komodo-TortoiseSVN
 TortoiseSVN snippets collection for Komodo edit / ide.   
-Easy to use, you can add the snippets on different ways.
 
 ## Usage
 ### Search for Snippet
