@@ -9,15 +9,41 @@ You also need to remember to escape the backslash (`\\` instead of `\`).
 
 The menu contains:
 
-	Menu  | Command 
-	----- | ------- 
-	Clean up this project | `svn cleanup`
-	Commit all files currently open | `svn commit -m "Message" file1 file2 ...` 
-	Commit current file |  `svn commit -m "Message" currentFile`  
-	Commit current file's directory | `TortoiseProc /command:commit /path:"currentFilePath"` 
-	Commit current project | `TortoiseProc /command:commit /path:"currentProjectPath"` 
-	Show diff with previous version | `svn di currentFile` 
-	Update current project |  `svn update currentProjectPath`
+<table><thead>
+<tr>
+<th>Menu</th>
+<th>Command</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Clean up this project</td>
+<td><code>svn cleanup</code></td>
+</tr>
+<tr>
+<td>Commit all files currently open</td>
+<td><code>svn commit -m "Message" file1 file2 ...</code></td>
+</tr>
+<tr>
+<td>Commit current file</td>
+<td><code>svn commit -m "Message" currentFile</code></td>
+</tr>
+<tr>
+<td>Commit current file's directory</td>
+<td><code>TortoiseProc /command:commit /path:"currentFilePath"</code></td>
+</tr>
+<tr>
+<td>Commit current project</td>
+<td><code>TortoiseProc /command:commit /path:"currentProjectPath"</code></td>
+</tr>
+<tr>
+<td>Show diff with previous version</td>
+<td><code>svn di currentFile</code></td>
+</tr>
+<tr>
+<td>Update current project</td>
+<td><code>svn update currentProjectPath</code></td>
+</tr>
+</tbody></table>
 
 	
 ### Search for Snippet
